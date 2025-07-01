@@ -4,18 +4,19 @@ This repository provides a Bash script to calculate how long each pod in a Kuber
 
 ## ✅ Use Case
 <br>
-- Debugging slow pod startups  
-- Validating readiness probe configuration  
-- Benchmarking deployment behavior across environments  
+
+- Debugging slow pod startups.  
+- Validating readiness probe configuration.  
+- Benchmarking deployment behavior across environments.  
 
 <br>
 
 ## 🛠️ Prerequisites
 <br>
 
-- `kubectl` configured to access your cluster  
-- `jq` installed on your system  
-- Appropriate RBAC permissions to get pod details  
+- `kubectl` configured to access your cluster.  
+- `jq` installed on your system.  
+- Appropriate RBAC permissions to get pod details.  
 
 <br>
 
@@ -145,16 +146,20 @@ fi
 
 ## 📊 Sample Outputs
 
+- Make sure your script file has permissions to execute.
+- Leaving namespace as blank will be defaulted to default namespace.
+- Default threshold is 30 sec.
+- Hitting enter when asked for namespace will take default namespace and threshold to 30 sec.
+
 <br>
 
-```
 ![image](https://github.com/user-attachments/assets/a1236fd0-c0bd-4b25-baf1-8fc9b2731612)
-```
 
 <br>
 
-```
 ![image](https://github.com/user-attachments/assets/ca29abb6-e8a1-4d18-bc37-92773c5f04a6)
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/1b5e56eb-2c5d-4e80-a6f6-d1f012e94b0c)
 
-```
